@@ -565,7 +565,7 @@ public class SquidTest extends ApplicationAdapter {
             // this just moves the grid position of the player as it is internally tracked.
             player = player.translate(xmod, ymod);
             // calculates field of vision around the player again, in a circle of radius 9.0 .
-            FOV.reuseFOV(resistance, visible, player.x, player.y, 9.0, Radius.CIRCLE);
+            FOV.reuseFOV(resistance, visible, player.x, player.y, 10.0, Radius.CIRCLE);
             // This is just like the constructor used earlier, but affects an existing GreasedRegion without making
             // a new one just for this movement.
             blockage.refill(visible, 0.0);
